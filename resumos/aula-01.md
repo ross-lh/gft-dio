@@ -1,4 +1,4 @@
-#tópicos da 1ª aula de Git/Github
+# tópicos da 1ª aula de Git/Github
 
 - criação e clonagem de repositórios via terminal/git bash
 - comandos desenvolvidos:
