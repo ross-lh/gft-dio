@@ -1,7 +1,7 @@
 # gft-dio
 
 ## Primeira parte
-Introduzir ao versionamento de código com Git e GitHub.
+Introdução ao versionamento de código com Git e GitHub.
 
 ## Ferramentas
 [![Git](https://img.shields.io/badge/Git-000?style=for-the-badge&logo=git&logoColor=E94D5F)](https://git-scm.com/doc) 
