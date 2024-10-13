@@ -11,5 +11,3 @@
 	git reset --soft
 	git reset --mixed
 	git reset --hard (apaga completamente todos os arquivos, retornando ao estágio original do commit selecionado)
-
-	
