@@ -1,4 +1,4 @@
-# gft-dio
+# GFT Start ¨6¨ | Dio
 
 ## Primeira parte
 Introdução ao versionamento de código com Git e GitHub.
