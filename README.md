@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 # GFT Start ¨6¨ | Dio
+=======
+# é o gft-dio
+>>>>>>> 509c72f (title modify)
 
 ## Primeira parte
 Introdução ao versionamento de código com Git e GitHub.
