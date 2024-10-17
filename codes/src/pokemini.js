@@ -3,15 +3,29 @@ let id = 'Pikachu'
 let level = 20 
 let hp = 40
 let hpmax = 45 
-let gender = 'male' 
+let gender = 'macho' 
 let availability = true
+let requiredPokemon = "Charmander"
 
-function(string) {
-    if (availability = true): return string='disponível' 
+// verificando disponibilidade do Pokémon
+let statusA = ""
+
+if(availability === true){
+statusA = "disponível"
+}else{
+statusA = "fainted"
 }
 
-console.log('tu tem um(a):' + id
+console.log('tu tem um(a): ' + id
     + " level: " + level + " com "
-    + hp + "/" + hpmax + " de HP "    
-    + gender + "que está "
-)
+    + hp + "/" + hpmax + " de HP, "    
+    + gender + ", que está " + statusA + ".")
+console.log()
+
+// testando operadores lógicos
+let verifyPokemon = (id == requiredPokemon)
+
+console.log(verifyPokemon)
+console.log()
+console.log(statusA)
+console.log(!statusA)
