@@ -1,4 +1,4 @@
-/*# 1️⃣ Desafio Classificador de nível de Herói
+/* # 1️⃣ Desafio Classificador de nível de Herói
 
 **O Que deve ser utilizado**
 
@@ -25,15 +25,26 @@ Se XP for maior ou igual a 10.001 = Radiante
 Ao final deve se exibir uma mensagem:
 "O Herói de nome **{nome}** está no nível de **{nivel}**" */
 
-let nomeHeroi = "Manoel"
-let nivelHeroi = 999
+let heroName = "Manoel"
+let heroLvl = 6007
+let level = ""
 
-switch (nivelHeroi){
-    case (0 < nivelHeroi < 1000):
-        nivelHeroi = "Ferro";
-        break
-    default:
-        nivelHeroi = "básico. Vai grindar"
+if (heroLvl < 1000){
+    level = "Ferro"
+} else if (heroLvl >= 1001 && heroLvl <= 2000){
+    level = "Bronze"
+} else if (heroLvl >= 2000 && heroLvl <= 5000){
+    level = "Prata";
+} else if (heroLvl >= 5001 && heroLvl <= 7000){
+    level = "Ouro";
+} else if (heroLvl >= 7001 && heroLvl <= 8000){
+    level = "Platina";
+} else if (heroLvl >= 8001 && heroLvl <= 9000){
+    level = "Ascendente";
+} else if (heroLvl >= 9001 && heroLvl <= 10000){
+    level = "Imortal";
+} else if (heroLvl >= 10001){
+    level = "Radiante";
 }
 
-console.log("O Herói de nome " + nomeHeroi + " está classificado no rank " + nivelHeroi + ".")
+console.log("O Herói de nome " + heroName + " está classificado no nível " + level + ".")
