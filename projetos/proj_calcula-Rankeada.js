@@ -26,14 +26,19 @@ Ao final deve se exibir uma mensagem:
 "O Herói tem de saldo de **{saldoVitorias}** está no nível de **{nivel}**" */
  
 // declarando variáveis para o código
-let heroWins = 10
+let heroWins = 2
 let heroLosses = 4
-let heroRatio = (heroWins - heroLosses)
+let heroRatio = heroWins - heroLosses
+
 let heroLevel = ""
 
-while (heroWins < 10)
-    console.log(`Vença mais ${10-heroWins} partidas para obter seu rank.`);
-    heroWins ++;
+// estrutura de repetição que garante uma relação de pelo menos 0(zero) para classificar o herói
+while (heroRatio < 0) {
+    console.log(`Vença pelo menos ${heroRatio*-1} partida(s) para obter seu rank.`)
+    console.log('...')
+    console.log(`Boa! Falta(m) ${heroRatio*-1-1} vitória(s) para obter seu rank.`)
+    heroRatio++;
+}
 
 // função que simplifica a comparação de valores na estrutura de decisão de nível
 function betweenValues(min, max) {
@@ -41,20 +46,20 @@ function betweenValues(min, max) {
     }
 
 // estrutura de decisão para formar o rank do herói
-if (heroRatio < 10){
+if (heroRatio <= 10){
     heroLevel = "Ferro"
-} else if (betweenValues(11,20)){
-    heroLevel = "Bronze"
-} else if (betweenValues(21,50)){
-    heroLevel = "Prata"
-} else if (betweenValues(51,80)){
-    heroLevel = "Ouro"
-} else if (betweenValues(81,90)){
-    heroLevel = "Diamante"
-} else if (betweenValues(91,100)){
-    heroLevel = "Lendário"
-} else if (heroRatio >= 101){
-    heroLevel = "Imortal"
+    } else if (betweenValues(11,20)){
+        heroLevel = "Bronze"
+    } else if (betweenValues(21,50)){
+        heroLevel = "Prata"
+    } else if (betweenValues(51,80)){
+        heroLevel = "Ouro"
+    } else if (betweenValues(81,90)){
+        heroLevel = "Diamante"
+    } else if (betweenValues(91,100)){
+        heroLevel = "Lendário"
+    } else if (heroRatio >= 101){
+        heroLevel = "Imortal"
 }
 
 // saída final do saldo de vitórias e nível do Herói    
