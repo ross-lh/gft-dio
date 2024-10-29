@@ -1,4 +1,5 @@
 // introdução a objetos - codando em JSON
+// estrutura chave-valor
 
 let purchaseOrder = {
     customer: "Clientola",
@@ -10,6 +11,7 @@ let purchaseOrder = {
         }
 }
 
+//JS padrão testando a invocação de objetos em JSON
 let purchaseTotal = 0.00
 
 for (let index in purchaseOrder.products){
